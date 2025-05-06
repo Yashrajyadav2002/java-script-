@@ -66,4 +66,32 @@ console.log(d);
 let D =new Date(2025,4,3,25,36,10);
 console.log(D);
 
+let z=Date(468541684);
+console.log(z);
+
+// methods of date
+
+const year = D.getFullYear();
+console.log(year);
+
+
+const month = D.getMonth();
+console.log(month);
+
+
+const day = D.getDay();
+console.log(day);
+
+
+const date = D.getDate();
+console.log(date);
+
+const hour = D.getHours();
+console.log(hour);
+
+const mini = D.getMinutes();
+console.log(mini);
+
+const sec = D.getSeconds();
+console.log(sec);
 
