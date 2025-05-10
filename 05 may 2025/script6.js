@@ -7,7 +7,7 @@ console.log(a);
 
 //ceil - returns the upper value 
 
-let b = Math.ceil(3.6544);
+let b = Math.ceil(3.44);
 console.log(b);
 
 //trunc - returns the integer value
@@ -32,7 +32,7 @@ console.log(g);
 
 // RANDOM = returns the random value
 
-let h = Math.random()+1;
+let h = Math.random()+2;
 console.log(h);
 
 
@@ -79,7 +79,7 @@ const month = D.getMonth();
 console.log(month);
 
 
-const day = D.getDay();
+const day = D.getDay("2");
 console.log(day);
 
 
