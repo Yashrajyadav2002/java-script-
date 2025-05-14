@@ -61,9 +61,61 @@ const person ={
         console.log("hello");
     }
 }
+
+// update
+person.age = 67;
+//add
+person.hasAddress =  true;
+console.log(person);
 console.log(person.name);
 console.log(person['name']);
 console.log(person.isEligible);
 console.log(person.address.country);
 console.log(person.hobbies[1]);
 person.greet();
+
+// spread operator(...)
+const obj1 = {
+    a:1,
+    b:2,
+
+};
+const obj2 = {
+    c:3,
+    d:4,
+};
+
+const obj3 = {...obj1,...obj2};
+console.log(obj3);
+
+// array of objects
+
+const students = [
+    {name:"ram",id:1,course:"meran"},
+    {name:"shiv",id:2,course:"python"},
+    {name:"shyam",id:3,course:"java"},
+    {name:"mohan",id:4,course:"php"},
+    {name:"raghav",id:5,course:"ruby"},
+];
+console.log(students[1].name+" "+students[1].id +" "+students[1].course);
+
+
+console.log(`${students[2].name} ${students[2].id} ${students[2].cousre}`);
+
+//desturcting
+
+const car = {
+    color:"red",
+    model:2024,
+    brand:"ford",
+};
+
+console.log(car);
+const {color,model,brand} = car;
+console.log(color,model,brand);
+
+const { color:a,model:b,brand:c} = car;
+console.log(a,b,c);
+
+
+// json writen in double coat
