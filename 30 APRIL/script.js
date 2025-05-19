@@ -42,3 +42,45 @@ console.log(typeof H);
 //type conversion
 
 
+// this is the question time
+
+// wap to chek number is odd or even using with arrugment and no return
+
+function arr (num){
+    if (num%2!==0){
+        console.log("odd");
+    }
+    else{
+        console.log("even");
+    }
+
+}
+let num9 = prompt("enter num");
+arr(num9);
+
+// question third
+
+let obj2 = {name:"aman",age:24,city:"nhopal",salary:200000};
+
+console.log(Object.keys(obj2));
+
+// question number 4
+
+function array(){
+    let see = [1,2,3,4,5,6,7,8,9,];
+    sum = 0;
+    for(let i=0;i<see.length;i++){
+        sum=sum+i;
+    }
+    return sum;
+}
+console.log(array());
+
+// question number 5
+
+let num= prompt("enter a number");
+function div(c){
+    return c*3.14*c;
+}
+let resuult = div(num)
+console.log(resuult);

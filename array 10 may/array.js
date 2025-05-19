@@ -22,7 +22,7 @@ console.log(mixed[1]);
 console.log(mixed[4].age);
 
 // length give the array length
-x= numbers.length;
+x= numbers.length(5);
 console.log(x);
 
 //it terturns the number of elements\
@@ -37,7 +37,7 @@ console.log(x);
 x =numbers.push(8);
 console.log(x);
 // pop - remove the value of end
-
+let x = "javascript";
 x =numbers.pop(4);
 console.log(x);
 
