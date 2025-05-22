@@ -38,3 +38,4 @@
 
 let img = document.getElementById("my");
 img.src = "bugati.jpg";
+
