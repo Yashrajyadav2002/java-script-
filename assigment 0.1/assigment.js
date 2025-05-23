@@ -28,12 +28,18 @@ console.log(rep);
 //question number 0.5
 //extrect a number from a string using javascript ?
 
+let num = 1234;
+console.log(num,typeof num);
+let sup= num.toString();
+console.log(sup ,typeof sup);
 
 
 //question number 0.6
 // convert string into date using javascript?
 
-
+let datestr = "2006-05-29";
+let dateobj = new Date (datestr);
+console.log(dateobj);
 
 //question number 0.7
 // //insert a string at a spscific index ?
@@ -57,6 +63,7 @@ console.log("the longest word is ",longest);
 
 //question number 0.9
 //write a javascript program to find the prime number in a given array ?
+
 
 
 
