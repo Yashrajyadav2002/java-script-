@@ -63,9 +63,18 @@ console.log("the longest word is ",longest);
 
 //question number 0.9
 //write a javascript program to find the prime number in a given array ?
+let fun = [12434];
 
-
-
+for (let item of fun){
+for (var i =2; i<item; i++){
+    if(item%i==0){
+        break;
+    }
+    if(item==i){
+        console.log(item);
+    }
+}
+}
 
 
 //question number 0.10
@@ -88,29 +97,32 @@ console.log("sum of the array is",sum);
 
 
 // question number 0.12
-// write a program to check the given srting is a palindrom or not ?
-function palindrone(){
-    let start = 0;
-    let end = data.length-1;
-    let result = true;
-
-    while(end>start){
-        if(data[start] = data[end]){
-            result = false;
-        }
-        start++;
-        end--;
-    }
- return result;
+// // write a program to check the given srting is a palindrom or not ?
+function palindrome(data){
+    const str =data.toString();
+    const reversed =str.split('').reverse().join('');
+    return str === reversed;
 }
-let str10 = "eve";
-console.log(palindrone{str10});
 
+const value = 131;
+if(palindrome(value)){
+    console.log(`${value} is a palindrone number`);
+}else{
+    console.log(`${value} is not a palindrone number `);
+}
 
 
 // question number 0.13
 //write a javascript program to find current age of any person by using his/her data of birth ?
 
+function agesystem (birth){
+    const birthtarik = new Date(birth);
+    const dateDi = Date.now() - birthtarik.getTime();
+    const ageofyear = new Date(dateDi);
+    return Math.abs(ageofyear.getUTCFullYear()-1970);
+};
+const DateOFBirth = "1948-06-02";
+console.log("his / him Date OF Birth is",agesystem(DateOFBirth));
 
 // question number 0.14
 // //how to caluclate the yesterday date in javascript ?
