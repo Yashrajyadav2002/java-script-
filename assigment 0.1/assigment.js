@@ -89,7 +89,22 @@ console.log("sum of the array is",sum);
 
 // question number 0.12
 // write a program to check the given srting is a palindrom or not ?
+function palindrone(){
+    let start = 0;
+    let end = data.length-1;
+    let result = true;
 
+    while(end>start){
+        if(data[start] = data[end]){
+            result = false;
+        }
+        start++;
+        end--;
+    }
+ return result;
+}
+let str10 = "eve";
+console.log(palindrone{str10});
 
 
 
