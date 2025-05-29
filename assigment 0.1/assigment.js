@@ -203,3 +203,76 @@ const multiplaction = a*b*c*d*e*f*g;
 
 console.log("multiplaction of first elemnets",multiplaction);
    
+
+
+// !!!!!!!!!!!!!!! its question time !!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// question 0.1 how do you find the length of a string ?
+
+let s = "who are you man";
+console.log ;
+
+function getlastelement(localArr){
+
+    return localArr[localArr.length -1]
+};
+    let arry = [1,2,3,4];
+    
+    let lastelement = getlastelement(arry)
+    console.log(lastelement)
+    console.log(arry);
+
+// .2 find the combination of two arrays ? (using spread operator)
+
+let arr1 = [1,2,3,4];
+let arr2 = [5,6,7,8];
+
+let combin = [...arr1 , ...arr2];
+console.log(combin);
+
+// genrate a random integer between 0 to 18 ?
+
+let ab = Math.floor(Math.random()*19);
+console.log(ab);
+
+// create a funcation 
+
+let arr = [1,2,3,'m','n',5];
+
+let result = arr.filter(element=>{
+    if (typeof element === 'String'){
+        return true;
+    }else{
+        return false;
+    }
+})
+console.log(result);
+
+// .5 find the max num in arry ?
+let aruu = [12.15,17,0];
+let max = Math.max(...aruu);
+console.log(max);
+
+//0.7
+
+let persons = [
+    {
+        name:"yash",
+        age:23
+    },
+    { name:"aman",
+        age:24,
+    },
+    {
+        name:"raja",
+        age:23,
+    },
+]
+ let ree = final = persons.filter(obj=>
+ {
+    return obj.age === '23'
+ });
+
+ console.log(ree);
+ 
+
