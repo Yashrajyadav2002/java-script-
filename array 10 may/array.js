@@ -90,4 +90,72 @@ console.log(full);
 full = fruits.concat(vege);
 console.log(full);
 
+// Array practice
+let arr = [1,2,3,4,5,6,7];
+console.log(arr ,typeof arr);
+arr[0]=599;
+console.log(arr.length);
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
 
+// array is muatable
+
+// convert in to string 
+let arr1 = [ 599,799,899,1,5,6];
+console.log(arr1 , toString ());
+
+// the join is conver the comma into command 
+console.log(arr1.join(" and "));
+
+// pop method - it remove the last element of an array 
+console.log(arr1.pop());
+console.log(arr1);
+
+// push - it add the last element in array
+console.log(arr1.push("yash"));
+console.log(arr1);
+
+//shift - it remove the first element 
+console.log(arr1.shift());
+console.log(arr1);
+
+// unshift - it add the element in first 
+console.log(arr1.unshift(899));
+console.log(arr1);
+
+//concate - it join the two array in one
+// it not change the exiting array 
+let one = [1,2,3,4];
+let two = [5,6,7,8];
+let join = one.concat(two);
+console.log(join);
+
+//sort - it short an array 
+// it change the original array 
+
+let the = ['a','b','c'];
+console.log(the);
+console.log(the.sort());
+
+// splice - it add the items in the array 
+let spli = [1,2,3,4,5];
+console.log(spli.splice(1,4));
+console.log(spli);
+
+// slice - it out the pice from array creat a new array
+
+let some = [1,2,3,4];
+console.log(some.slice(1));
+
+// reverse  - it revertse the elements 
+let rev = [1,2,3,4,5,6];
+console.log(rev.reverse());
+
+// reduse method - it return the one value of the total value 
+let and = [1,2,3,4,5];
+let res =(a,b)=>{
+    return a+b ;
+}
+console.log(and.reduce(res));
