@@ -137,3 +137,57 @@ console.log(heading);
 //0.25 How do you change the text content of a DOM element ?
 
 //0.26 Whats the diffrance between inner text and textcontent and inner html ?
+
+
+// Practice 5 may 2025
+//ask the user of their age if it is grater than or equal to 18 with ternary operator and display the result in alert  ?
+// let age = prompt("Emter your age buddy");
+// age = Number(age);
+
+// let massage= (age>=18)? "Your eligible" : "Your not eligble" ;
+// alert(massage);
+
+// // ask the user if they completed the course have a certifacte by (conform) . if both ok then give a "completed" massage by alert other wise not "completed" ?
+// let complited = confirm("Have you complited the course");
+// let hascertifacte = confirm("Do you have a certifacte");
+// let massage= (complited && hascertifacte)?("Your course is complited buddy") : ("Your course is not complited and certifacte is not available");
+// alert(massage);
+// ask the user for the price of an iteam and (conform) whatever the have a discount copon .Apply a 10 % discount if they conform ?
+// let price = prompt("What is the item price");
+//     price = Number(price);
+// let copon = confirm("Do you have discount copon");
+// let final = copon ? price * 0.9 : price ;
+
+// alert("final price is " + final.toFixed(2));
+
+// // ask the user form their exam score and determine . if they passed or failed ( Above 33 passs)?
+// let score = prompt("Enter your marks buddy");
+// let result= (score>=33)? "Your passed in exam buddy" : "Your failed in exam buddy";
+// alert(result);
+// //check the number is even or odd ?
+// let num = prompt("Enter the number buddy");
+// let chek = (user%2)? "the num is even " : "the num is odd";
+// alert(chek);
+// Ask for conformation "are you sure to delete" if ok give massage "iteam deleted" otherwise "cancelled" ?
+// let user = confirm("Are you sure to delete this");
+// let give = user ? "iteam is deleted" :"cancelled";
+// alert(give);
+//Cheked entered number is positive or nagative ?
+// let getnum = prompt("Enter the number");
+// let conform = (getnum>0) ? "the number is positive" : "the number is nagative";
+// alert(conform);
+//print 1-10 number console by while loop ?
+// let num = 1 ;
+// while (num<=10){
+// console.log(num);
+// num++;
+// };
+ 
+// // // keep asking the user to input a number until they enter  a number grater than 10 . by do while loop ?
+// let number ;
+// do {
+//     number = prompt("Enter the number buddy");
+//     number = number(number);
+// }
+// while (number <= 10);
+// alert ("Thank you ! You are entered.."+ number);
