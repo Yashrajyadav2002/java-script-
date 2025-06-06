@@ -171,7 +171,21 @@ console.log(Math.floor(9.656));
 
 // 
 
+// with using (ceil)
+let value1 = Math.random();
+function getRandom(min,max){
+    return Math.ceil(Math.random()*(max - min )) + min ;
 
+}
+console.log(getRandom(10,50));
+
+
+let sing = Math.random();
+let res = (Math.floor(9000*(sing)+1000));
+console.log(res);
+
+
+console.log(Math.floor(Math.random()*6+1));
 
 
 
