@@ -62,3 +62,6 @@ console.log(value,typeof value);
 let person = {name:"yash",age:21};
 console.log(person.name);
 console.log(person.age);
+
+//
+
