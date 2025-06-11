@@ -15,27 +15,33 @@ let validate=()=>{
 
     if(name==""){
         errorname.innerHTML="plese enter Name";
-        errorname.computedStyleMap.color="red";
+        errorname.style.color="red";
         return false;
     }
 
     else if(Email==""){
         erroremail.innerHTML="Plese enter vaild email";
+        erroremail.stye.color="red";
+        return false;
+    }
+    else if(!(Email.includes("@") && Email.includes(".com"))){
+          erroremail.innerHTML="please enter a valid email"
+          erroremail.style.color="red"
         return false;
     }
 
     else if(num.length!==10){
         errornumber.innerHTML="Plese enter a valid number";
+        errornumber.style.color="red";
         return false;
     }
 
     else if(isNaN(num)){
         errornumber.innerHTML="please enter number only";
+        errornumber.stye.color="red";
         return false;
     }
-    else if(Email.include("@" && Email.include(".com"))){
-        return false;
-    }
+    
 
     else if (pass!=copass){
         errorcopass.innerHTML="please enter same password"
@@ -50,7 +56,7 @@ let validate=()=>{
             pass.match(/[A-Z]/)
 )
 {
-    errorpass.innerHTML="Plase enter the stron password"
+    errorpass.innerHTML="Plase enter the strog password"
     return false;
 }
 };
