@@ -14,3 +14,90 @@ function calculatesum (){
 
     document.querySelector("result").innerText = `the sum from 1 to ${num} is ${sum}`;
 };
+
+let subject = "";
+
+function asksubject(){
+    subject = prompt("What is your favorite subject");
+}
+
+function showsubject(){
+    document.querySelector("#result").innerHTML =  subject;
+};
+
+let store = "";
+function asksentance(){
+
+    store = prompt("enter your sentance");
+    document.querySelector("#show").innerHTML = "Your sentance is :" + store.toUpperCase();
+
+};
+
+let fun = "";
+
+function word(){
+    fun = prompt("enter the word");
+    document.querySelector("#display").innerHTML = "this is your word :" + fun;
+
+    if(fun.includes('ing')){
+        document.querySelector("#display").innerHTML = "yas" ;
+    }else{
+        document.querySelector("#display").innerHTML = "no" ;
+        
+    }
+};
+//question number 0.8
+let what = "";
+
+function graternum(){
+    what = prompt("Enter the number buddy");
+    document.querySelector("#this").innerHTML= what;
+
+    if (what>=100){
+        document.querySelector("#this").innerHTML="Number is grater than 100";
+    }else{
+        document.querySelector("#this").innerHTML="Number is not grater than 100";
+    }
+};
+ 
+//question number 0.10
+let fruits = ["apple","banana","mango","orange"];
+
+function displayfruits(){
+    document.querySelector("#change").textContent=fruits.join(", ");
+};
+
+function diffrent(){
+    fruits.pop();
+    displayfruits();
+}
+displayfruits();
+
+//question number 11
+let color = "";
+function favorite(){
+    color =prompt("enter the color name");
+    document.querySelector("#colorinput").value;
+    document.body.style.backgroundColor = color;
+};
+
+const images = ["ac.jpg","fridge.jpg","knife.jpg"];
+
+let currentindex = 0;
+
+function showimage(index){
+    document.querySelector("#gallery").src = images[index];
+}
+function shownext(){
+    if (currentindex <images.length -1){
+        currentindex++;
+        showimage(currentindex);
+    }
+}
+
+function showprevious(){
+    if (currentindex>0){
+        currentindex--;
+        showimage(currentindex);
+    }
+}
