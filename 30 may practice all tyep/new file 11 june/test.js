@@ -101,3 +101,20 @@ function showprevious(){
         showimage(currentindex);
     }
 }
+
+//next question 04
+let counterelement = "";
+let value="";
+function increment(){
+     counterelement = document.querySelector("#counter");
+     value = parseInt(counterelement.innerHTML);
+                counterelement.innerHTML = value +3;
+}
+function decrement(){
+       counterelement = document.querySelector("#counter");
+       value = parseInt(counterelement.innerHTML);
+               counterelement.innerHTML = value - 3;
+};
+
+// question number 0.9
+document.querySelector("#output").innerHTML =  "javascript is amazing , learning javascript is fun" . replace(/javascript/gi,"mearn");
