@@ -19,3 +19,13 @@ console.log(a,b,c,d);
 const pi = 20.1;
 console.log(pi);
 
+
+let village2 = "Bhopal";
+console.log(village);
+
+let a1 = 10,
+b1 = 20,
+c2 = 30,
+d2 = 40 ;
+console.log(a,b,c,d);
+
