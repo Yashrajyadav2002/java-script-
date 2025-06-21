@@ -22,6 +22,8 @@ let FatchData=async()=>{
     
 )}
 
-
+let del=(id)=>{
+    fetch(`http://localhost:3000/carrent/${id}`,{method:"DELETE"})
+}
 
 FatchData();
