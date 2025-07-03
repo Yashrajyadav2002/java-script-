@@ -1,6 +1,5 @@
-
-let validate=()=>{
-    let name = document.querySelector("#name").value.trim();
+let signuppage=()=>{
+    let name = document.querySelector("#Name").value.trim();
     let email = document.querySelector("#email").value.trim();
     let num = document.querySelector("#number").value.trim();
     let pass = document.querySelector("#pass").value.trim();
@@ -14,39 +13,58 @@ let validate=()=>{
     let errorcopass = document.querySelector("#errorcopass");
 
     if(name==""){
-        errorname.innerHTML="plese enter Name";
-        errorname.style.color="red";
+        errorname.innerHTML="plese enter your Name here";
+        document.querySelector("#name").focus()
+        errorname.style.color="white";
         return false;
     }
 
     else if(email==""){
-        erroremail.innerHTML="Plese enter vaild email";
-        erroremail.stye.color="red";
+        erroremail.innerHTML = "please enter your email here"
+        document.querySelector("#email").focus()
+        erroremail.style.color = "white"
         return false;
     }
-    else if(!(Email.includes("@") && Email.includes(".com"))){
+    
+    else if(!(email.includes("@") && email.includes(".com"))){
           erroremail.innerHTML="please enter a valid email"
-          erroremail.style.color="red"
+          document.querySelector("#email").focus()
+          erroremail.style.color="white"
+        return false;
+    }
+    else if (num==""){
+        errornumber.innerHTML = "please enter your number here"
+        document.querySelector("#num").focus()
+        errornumber.style.color = "white"
         return false;
     }
 
     else if(num.length!==10){
-        errornumber.innerHTML="Plese enter a valid number";
-        errornumber.style.color="red";
+        errornumber.innerHTML="Plese enter 10 digits numbers";
+        document.querySelector("#num").focus()
+        errornumber.style.color="white";
         return false;
     }
 
     else if(isNaN(num)){
         errornumber.innerHTML="please enter number only";
-        errornumber.stye.color="red";
+        document.querySelector("#num").focus()
+        errornumber.stye.color="white";
         return false;
+    }
+
+    else if (pass==""){
+        errorpass.innerHTML = "please enter your password here"
+        document.querySelector("#pass").focus()
+        errorpass.style.color = "white"
+        return false ;
     }
     
 
     else if (pass!=copass){
         errorcopass.innerHTML="please enter same password"
         document.querySelector("#copass").value="";
-        document.querySelector("#copass").focus()
+        errorcopass.style.color = "white"
         return false;
     }
 
@@ -59,4 +77,4 @@ let validate=()=>{
     errorpass.innerHTML="Plase enter the strog password"
     return false;
 }
-};
+}
