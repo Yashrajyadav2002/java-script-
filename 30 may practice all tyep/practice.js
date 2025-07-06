@@ -193,3 +193,208 @@ console.log(heading);
 // alert ("Thank you ! You are entered.."+ number);
 
 //
+// let str = "yash";
+// let str2 = "sing";
+// let aloha = "yash" + " " + 23 + "kumar" +"sing"
+// console.log(aloha)
+// console.log(str,typeof str);
+// console.log(str2,typeof str2);
+
+// let a=10;
+// let b=20;
+// let c=30;
+// let str1 = `number1 = ${a} number 2 = ${b} number 3 = ${c}`;
+// console.log(str1);
+
+// let gama = `str = ${2+3+4+5+6}`;
+// console.log(gama);
+
+
+// its a constructor method
+// let str = new String("yash");
+// console.log(str);
+
+// strr = "hello  are you"
+// str2 = "how are you"
+// console.log(strr ,strr.length);
+// console.log(str2 ,str2.length);
+
+// let indi = "this is the index";
+// console.log(indi[1])
+// console.log(indi[5])
+// console.log(indi[7])
+
+// for (let ch of strr ){
+//     console.log(ch);
+// }
+
+// for (let key of str){
+//     console.log(key);
+// }
+
+// thes are string methods
+ 
+// let str  = "hello how are you";
+// let the = str.toUpperCase();
+// let low = str.toLowerCase()
+// let tr = str.trim();
+
+// console.log(the);
+// console.log(low);
+// console.log(str);
+// console.log(tr);
+
+// let first = "manas";
+// let middle = "kumar";
+// let last = "lal";
+
+// let fullname = `This is my full name ${first} ${middle} ${last}`;
+// console.log(fullname);
+
+// let the = "yashraj";
+// // let chek = the.includes('d');
+// // let ind = (the.indexOf('h'));
+// // let chr = (the.charAt(0))
+// let rep = (the.replace("yash" , "bhai"));
+// // console.log(chek);
+// // console.log(ind);
+// // console.log(chr);
+// console.log(rep);
+
+
+// let user = "yashkumarlaal";
+// console.log(user.slice(0,11));
+
+let firstName = "yash";
+const birthYear = 2000;
+var isDevloper = true;
+
+console.log(firstName,birthYear,isDevloper);
+
+// premative data type 
+let name2="yash"; // string
+let age = 25; // number
+let isStudent = true; // bollen
+let address ; //undefinded
+let empty = null; // null
+let bigNum = 123456n; //Bigint
+
+// nono parimative data type
+let person2 = {name:"mohan",age:25,city:"jaipur"}; // object
+let skills = ["html","css","javasvript"]; // array
+function greet(){
+    console.log("helo buddy");
+} // it is funcation
+
+console.log(name,age,isStudent,address,empty,bigNum);
+console.log(person2,skills);
+greet();
+
+// operators 
+
+// Arithmatic operators
+
+// condational 
+let val = 16;
+if(val>=18){
+    console.log("You are adult !")
+} else{
+    console.log("You are too young")
+};
+
+let score = 90;
+
+if(score>=90){
+    console.log("grade: A");
+}else if (score >=75){
+    console.log("Grade : B")
+} else if (score>=50){
+    console.log("Grade: C");
+} else{
+      console.log("Grade : D")
+};
+
+// switch statment 
+
+let day = 2;
+
+switch(day) {
+    case 1:
+        console.log("monday");
+        break;
+    case 2 :
+        console.log("tuesday");
+        break;
+    case 3 :
+        console.log("wednesday");
+        break;
+    case 4 :
+        console.log("thursday");
+        break;
+    case 5 :
+        console.log("friday");
+        break;
+    case 6 :
+        console.log("saturday");
+        break;
+    default :
+        console.log("try with valid number");  
+};
+
+let num = 7 ;
+if(num%2===0){
+    console.log("Even number")
+}else{
+    console.log("Odd number")
+};
+
+// loops in javascript 
+
+// when you know how many times to loop
+for(let i=1;i<=5;i++){
+    console.log("count" ,i);
+};
+
+// while loop
+let i = 1;
+while(i<=3){
+    console.log("number" ,i)
+    i++;
+};
+//Do while loop
+let l =1;
+do{
+    console.log("value",l)
+    l++
+} while(l<=3);
+
+let fruits = ["apple","orange","mango"];
+
+for(let fruit of fruits){
+    console.log(fruit)
+};
+
+let man ={name:"ram",age:26,city:"raipur"};
+for(let detail in man){
+    console.log(detail)
+} ;
+
+for (let i =100; i>=1; i--){
+    console.log(i)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
