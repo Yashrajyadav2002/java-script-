@@ -160,12 +160,21 @@
 // }
 // console.log(and.reduce(res));
 
+ let and = [1,2,3,4,5];
+ let res =(a,b)=>{
+    return a+b ; }
+ console.log(and.reduce(res));
+
 // // Array practice 05 june 2025 ?
 
 // // // Find the sum of all elements .Given an array [2,4,6,8,10],write a program to find the sum of all elements /
 // // let = arr =[2,4,6,8,10];
 // // let = total = arr.reduce((sum,value)) => sum +value,0 );
 // // console.log(total);
+
+let = arr =[2,4,6,8,10];
+ let = total = arr.reduce((sum,value)) => (sum +value,0 );
+ console.log(total);
 
 // //Write a program to find the maximum number in array [3,7,2,9,5] ?
 let maxi = [3,7,2,9,5];
