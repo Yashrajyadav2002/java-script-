@@ -197,3 +197,55 @@ console.log("number of odd number",oddcount);
 // //Write a program to chek if a given number (e.g, 9) exist in array [3,5,7,9,11] ?
 
 // //marge two array [1,2,3] and [4,5,6] without using concat method ?
+
+//  these are literal methods in number declrition 
+let num5 = 12345;
+let num7 = "12345";
+let num6 = '12345';
+console.log(num , typeof num);
+console.log(num7 , typeof num7);
+console.log(num6 , typeof num6);
+
+//constructor method in numbers 
+// it allways a number in any condition
+let num8 = new Number (123456);
+console.log(num8);
+ // we chek the it is integer or not
+
+ let val7 = 123.456;
+ console.log(Number.isInteger(val7));
+
+ // parseint -  we can change the value  float into  integer?
+ let val11 = 125.56;
+ console.log(Number.parseInt(val11));
+ 
+ // parsefloat - we can change the value integer into float
+ let val22 = '125.384px';
+ console.log(Number.parseFloat(val22));
+
+ // isfinite - we can chek the infinte vale ?
+
+ let infi3 = 1/0;
+ console.log(Number.isFinite(infi3));
+
+ // number instance method // used on number premative?
+   
+// (toFixed) - it take the value after the point ?
+
+let fix4 = 123456;
+console.log(fix.toFixed(3));
+
+// toexponstional - 
+
+// precision - it return the pre size value (round figer value)
+
+let pree5 = 123.46;
+console.log(pree5.toPrecision(3));
+
+
+// tostring -  it convert the number into string ?
+
+let str6 = 1234;
+console.log(str6.toString().length);
+
+
