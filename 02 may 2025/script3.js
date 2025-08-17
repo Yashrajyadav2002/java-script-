@@ -70,3 +70,47 @@ console.log(fullstring);
 let data=`hello everyone i think you understand my things ${first} and ${last}`;
 
 console.log(data);
+
+//  !!!!!!!!!!!!!! COMMON STRING METHODS !!!!!!!!!!!!!!!!!!
+
+// LENGTH - returns the count of the string
+
+let text = "javascript";
+console.log(text.length);
+
+// touppercase - returns the upper vale of string
+let str = "yashraj";
+console.log(str.toUpperCase());
+
+// tolowercase - returns the lower vale of string
+
+let low = "YADAVJI";
+console.log(low.toLowerCase());
+
+// charAT - returns the charactor at a specfic index
+
+let char = "sonu rawat";
+console.log(char.charAt(5));
+
+// indexOF - returns the position of first match
+
+let index = "yadavjisarkar";
+console.log(index.indexOf("sarkar"));
+
+// includes - returns the substring exists
+
+let inc = "Hello Betu";
+console.log(inc.includes("Hello"));
+
+//slice - returns the part of the string (it will give the number of string value)
+
+let slice = "yadavji sarkar";
+console.log(slice.slice(7));
+
+// replace - returns the replace value of string
+
+let rep = "yashraj yadavji";
+console.log(rep.replace("yadavji","sarkar"));
+
+
+
