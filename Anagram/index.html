@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anagram Checker — Betu</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="title">
+    <div class="card" aria-live="polite">
+      <h1 id="title">Anagram Checker</h1>
+      <p class="lead">Type two phrases/words and I'll tell you whether they're anagrams. Spaces, punctuation and letter case are ignored.</p>
+
+      <div class="input-row" role="group" aria-label="Inputs">
+        <label class="field" title="First phrase">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:6px">First text</div>
+          <input id="textA" type="text" placeholder="e.g. listen" autocomplete="off" />
+        </label>
+
+        <label class="field" title="Second phrase">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:6px">Second text</div>
+          <input id="textB" type="text" placeholder="e.g. silent" autocomplete="off" />
+        </label>
+      </div>
+
+      <div class="controls">
+        <button id="checkBtn" class="btn btn-primary">Check Anagram</button>
+        <button id="swapBtn" class="btn btn-ghost">Swap</button>
+        <button id="clearBtn" class="btn btn-ghost">Clear</button>
+        <div style="flex:1"></div>
+        <label style="color:var(--muted);font-size:13px">
+          <input id="strict" type="checkbox" style="margin-right:8px" /> Strict (letters only)
+        </label>
+      </div>
+
+      <div id="resultArea" class="result" style="margin-top:18px; display:none;">
+        <div id="resultBadge" class="badge">?</div>
+        <div class="text">
+          <div id="resultText">—</div>
+          <div id="extra" style="font-size:13px;color:var(--muted);margin-top:6px"></div>
+        </div>
+      </div>
+
+      <footer class="small">Tip: use the <strong>Swap</strong> button to quickly flip inputs.</footer>
+    </div>
+
+    <aside class="preview card" aria-label="Preview">
+      <h3>Sorted letters preview</h3>
+      <div style="display:flex;gap:12px">
+        <div style="flex:1">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px">First</div>
+          <div id="previewA" class="letters"></div>
+        </div>
+        <div style="width:12px"></div>
+        <div style="flex:1">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px">Second</div>
+          <div id="previewB" class="letters"></div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div id="lenInfo">—</div>
+        <div id="timeInfo">Ready</div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

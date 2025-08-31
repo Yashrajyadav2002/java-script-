@@ -1,0 +1,64 @@
+:root{
+  --bg1: #0f172a;
+  --bg2: #062f4f;
+  --glass: rgba(255,255,255,0.05);
+  --accent: #7c5cff;
+  --accent-2: #00d4ff;
+  --muted: rgba(255,255,255,0.65);
+  --radius: 14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg,var(--bg1),var(--bg2));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+  color:#fff;
+}
+
+/* Layout */
+.wrap{
+  max-width:920px;
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 420px;
+  gap:28px;
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: var(--radius);
+  padding:28px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Typography */
+h1{margin:0 0 8px;font-size:20px;font-weight:700}
+p.lead{color:var(--muted);font-size:13px;margin:0 0 20px}
+
+/* Inputs */
+.input-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.field{flex:1 1 220px;background: var(--glass);padding:12px 14px;border-radius:12px}
+.field input{width:100%;background:transparent;border:0;outline:none;color:#fff;font-size:15px}
+
+/* Buttons */
+.controls{display:flex;gap:12px;align-items:center;margin-top:10px}
+.btn{padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer;border:0}
+.btn-primary{background: linear-gradient(90deg,var(--accent),var(--accent-2));color:#061024}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.1)}
+
+/* Result */
+.result{margin-top:18px;padding:16px;border-radius:12px;display:flex;gap:12px;align-items:center;background: rgba(255,255,255,0.05)}
+.badge{min-width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:700;font-size:18px}
+.badge.good{background:#16a34a;color:#fff}
+.badge.bad{background:#ef4444;color:#fff}
+
+/* Preview */
+.preview{padding:18px;border-radius:var(--radius);background: rgba(255,255,255,0.03)}
+.letters{display:flex;gap:8px;flex-wrap:wrap;padding-top:8px}
+.chip{padding:10px 12px;border-radius:10px;background: rgba(255,255,255,0.1);font-weight:600;font-size:14px}
+.meta{margin-top:12px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
