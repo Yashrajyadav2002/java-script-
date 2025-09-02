@@ -113,4 +113,36 @@ let rep = "yashraj yadavji";
 console.log(rep.replace("yadavji","sarkar"));
 
 
+// tolowercase - returns the lower vale of string
+
+let low2 = "YADAVJI";
+console.log(low.toLowerCase());
+
+// charAT - returns the charactor at a specfic index
+
+let char2 = "sonu rawat";
+console.log(char.charAt(5));
+
+// indexOF - returns the position of first match
+
+let index3 = "yadavjisarkar";
+console.log(index.indexOf("sarkar"));
+
+// includes - returns the substring exists
+
+let inc4= "Hello Betu";
+console.log(inc.includes("Hello"));
+
+//slice - returns the part of the string (it will give the number of string value)
+
+let slice3 = "yadavji sarkar";
+console.log(slice.slice(7));
+
+// replace - returns the replace value of string
+
+let rep2 = "yashraj yadavji";
+console.log(rep.replace("yadavji","sarkar"));
+
+
+
 
