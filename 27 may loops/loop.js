@@ -96,3 +96,42 @@ console.log(newArray);
  
 
 
+// for each in  loops !!!!!!!!!!!!!!
+// its a call back funcation for each element 
+ const numb1 =[10,20,30,40];
+
+let txt1 ="";
+
+ numb.forEach(myfuncation);
+ function myfuncation(x){
+    txt += x + " ";
+ }
+ console.log(txt);
+
+
+ // print the squire of array objects ?
+ const numc2 =[10,20,30,40];
+
+let text2 ="";
+
+ numc.forEach(myfuncation1);
+ function myfuncation1(x){
+    text += x*x + " ";
+ }
+ console.log(text);
+
+ // !!!!!!!!!!!!!! MAP METHOD !!!!!!!!!!!!!!
+
+ // the map() method is use for creating a new array from an existing one . applying a funcation to each one of the element of the array .
+
+ const num2 =[1,2,3,4,5];
+ const newArray2 = num1.map(myfuncation2);
+
+ function myfuncation2(x){
+    return x*x;
+ }
+console.log(newArray);
+ 
+ 
+
+
