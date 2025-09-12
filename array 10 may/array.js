@@ -172,9 +172,9 @@
 // // let = total = arr.reduce((sum,value)) => sum +value,0 );
 // // console.log(total);
 
-let = arr =[2,4,6,8,10];
- let = total = arr.reduce((sum,value)) => (sum +value,0 );
- console.log(total);
+// let = arr =[2,4,6,8,10];
+//  let = total = arr.reduce((sum,value)) => (sum +value,0 );
+//  console.log(total);
 
 // //Write a program to find the maximum number in array [3,7,2,9,5] ?
 let maxi = [3,7,2,9,5];
@@ -247,5 +247,96 @@ console.log(pree5.toPrecision(3));
 
 let str6 = 1234;
 console.log(str6.toString().length);
+
+
+// console.log(and.reduce(res));
+
+ let and1 = [1,2,3,4,5];
+ let res1 =(a,b)=>{
+    return a+b ; }
+ console.log(and1.reduce(res1));
+
+// // Array practice 05 june 2025 ?
+
+// // // Find the sum of all elements .Given an array [2,4,6,8,10],write a program to find the sum of all elements /
+// // let = arr =[2,4,6,8,10];
+// // let = total = arr.reduce((sum,value)) => sum +value,0 );
+// // console.log(total);
+
+// let = arr =[2,4,6,8,10];
+//  let = total = arr.reduce((sum,value)) => (sum +value,0 );
+//  console.log(total);
+
+// //Write a program to find the maximum number in array [3,7,2,9,5] ?
+let maxi1 = [3,7,2,9,5];
+let total1 = Math.max(...maxi1);
+console.log(total1);
+// //Count the number how many number even or odd are in [1,2,3,4,5,6,7,8,9]; ?
+let arr1 =[1,2,3,4,5,6,7,8,9,10];
+let evencount1 =0;
+let oddcount1 =0;
+
+for (let i =0; i<arr.length;i++){
+    if(arr[i]%2===0){
+        evencount++;
+    } else{
+        oddcount++;
+    }
+};
+console.log("number of even number",evencount);
+console.log("number of odd number",oddcount);
+// //Write a program to chek if a given number (e.g, 9) exist in array [3,5,7,9,11] ?
+
+// //marge two array [1,2,3] and [4,5,6] without using concat method ?
+
+//  these are literal methods in number declrition 
+let num4 = 12345;
+let num3 = "12345";
+let num2 = '12345';
+console.log(num4 , typeof num4);
+console.log(num3 , typeof num3);
+console.log(num2 , typeof num2);
+
+//constructor method in numbers 
+// it allways a number in any condition
+let num9 = new Number (123456);
+console.log(num9);
+ // we chek the it is integer or not
+
+ let val6 = 123.456;
+ console.log(Number.isInteger(val6));
+
+ // parseint -  we can change the value  float into  integer?
+ let val1 = 125.56;
+ console.log(Number.parseInt(val1));
+ 
+ // parsefloat - we can change the value integer into float
+ let val23 = '125.384px';
+ console.log(Number.parseFloat(val23));
+
+ // isfinite - we can chek the infinte vale ?
+
+ let infi4 = 1/0;
+ console.log(Number.isFinite(infi4));
+
+ // number instance method // used on number premative?
+   
+// (toFixed) - it take the value after the point ?
+
+let fix5 = 123456;
+console.log(fix.toFixed(3));
+
+// toexponstional - 
+
+// precision - it return the pre size value (round figer value)
+
+let pree6 = 123.46;
+console.log(pree5.toPrecision(3));
+
+
+// tostring -  it convert the number into string ?
+
+let str7 = 1234;
+console.log(str7.toString().length);
 
 
