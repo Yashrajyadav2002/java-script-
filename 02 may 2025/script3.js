@@ -144,5 +144,81 @@ let rep2 = "yashraj yadavji";
 console.log(rep.replace("yadavji","sarkar"));
 
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! second time !!!!!!!!!!!!!!!!!!!!!
+
+// object literal?
+
+const person1={ name:"yash",age:22,city:"canada"};
+
+console.log(person1.name);
+console.log(person1.age);
+console.log(person1.city);
+
+//array 
+
+const num1=[1,2,3,4];
+
+console.log(num1[0]);
+console.log(num1[1]);
+console.log(num1[2]);
+console.log(num1[3]);
+
+// funcation 
+
+// funcation declaration
+
+function display(){
+    console.log("Yash is here");
+}
+
+//function calling 
+display();
+console.log(display,typeof display);
+
+
+// operators
+
+let x1=15;
+let y1=10;
+
+let z1=x1+y1;
+z1=x1/y1;
+z1=x1*y1;
+z1=x1-y1;
+
+console.log(z);
+
+x++;
+x=x+1;
+x-=y;
+console.log()
+
+// equlity operator
+
+// chek the value
+
+if (x === y){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+//concatenation
+
+let first1="hello";
+let last1="who";
+
+let fullstring1 = first1 +" " + last1;
+console.log(fullstring1);
+
+// string 
+// template tetril or template string?
+
+let data1=`hello everyone i think you understand my things ${first} and ${last}`;
+
+console.log(data1);
+
+
 
 
