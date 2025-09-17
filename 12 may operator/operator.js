@@ -119,3 +119,24 @@ console.log(a,b,c);
 
 
 // json writen in double coat
+
+
+// array of objects
+
+const students1 = [
+    {name:"ram",id:1,course:"meran"},
+    {name:"shiv",id:2,course:"python"},
+    {name:"shyam",id:3,course:"java"},
+    {name:"mohan",id:4,course:"php"},
+    {name:"raghav",id:5,course:"ruby"},
+];
+console.log(students1[1].name+" "+students1[1].id +" "+students1[1].course);
+
+
+console.log(`${students1[2].name} ${students1[2].id} ${students1[2].cousre}`);
+
+//desturcting
+
+
+
+// json writen in double coat
