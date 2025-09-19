@@ -38,3 +38,32 @@ function who (){
 
 }
 who();
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// write a program to take input from user and chek number is odd or even using funcation
+
+function Hello (){
+    let num1 = prompt("enter the num");
+
+    if (num1%2!==0){
+        console.log("number is odd");
+    }
+    else{
+            console.log("number is even");
+        }
+
+}
+Hello();
+
+// write a program to take from user print reverse table of thet of a number.
+function who (){
+    let val1 =prompt ("enter the number");
+
+    for (let i =10;i>0;i--){
+        console.log(val1,"x",i,'=',val1*i)
+    }
+
+}
+who();
