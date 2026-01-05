@@ -30,3 +30,20 @@ console.log(double1);
 let name1 =`my name is `;
 let backtik1 = `Hello , ${name1}! yashraj `;
 console.log(backtik1);
+
+
+// single coat string ?
+
+let single2 = " HELLO BROTHER ";
+console.log(single1);
+
+//double coat string?
+
+let double2 = 'who are you';
+console.log(double1);
+
+//backticks (template literals)?
+
+let name2 =`my name is `;
+let backtik2 = `Hello , ${name1}! yashraj `;
+console.log(backtik1);
