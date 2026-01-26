@@ -23,3 +23,32 @@ console.log(s);
 let rec =prompt("enter your length");
 let angle =parseInt(prompt("enter the width"));
 console.log("area is" ,rec*angle);
+
+
+// repeat
+
+// types of convertion
+var a1 =10;
+let y1 =a.toString(a1);
+console.log(y,typeof y);
+
+// var b ="hello";
+// z = b.number(b);
+// console.log(z , typeof z);
+
+h = 50+"55";
+console.log(h);
+
+r =45.69;
+s = parseFloat(r);
+console.log(s);
+
+// //user input
+// let name =prompt("what is your name");
+// let age =parseInt(prompt("enter your age"));
+// console.log(name+age);
+
+
+let rec1 =prompt("enter your length");
+let angle1 =parseInt(prompt("enter the width"));
+console.log("area is" ,rec*angle);
