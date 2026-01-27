@@ -188,6 +188,38 @@ console.log(res);
 console.log(Math.floor(Math.random()*6+1));
 
 
+//  repeact
+
+// ROund the number 9.656 to :
+// a . the nearest whole number 
+// b . upword
+// c. downword
+
+console.log(Math.round(9.656));
+console.log(Math.ceil(9.656));
+console.log(Math.floor(9.656));
+
+// 
+
+// with using (ceil)
+let value2= Math.random();
+function getRandom(min,max){
+    return Math.ceil(Math.random()*(max - min )) + min ;
+
+}
+console.log(getRandom(10,50));
+
+
+let sing1 = Math.random();
+let res1 = (Math.floor(9000*(sing)+1000));
+console.log(res);
+
+
+console.log(Math.floor(Math.random()*6+1));
+
+
+
+
 
 
 
