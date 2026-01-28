@@ -218,6 +218,42 @@ console.log(res);
 console.log(Math.floor(Math.random()*6+1));
 
 
+//question practice
+
+// its a practice time for math methods
+// question no 0.1
+let aa1 = Math.floor(4.9);
+console.log(aa); // 4 ;
+
+//question no 0.2
+let bb1 = Math.round(9.656);
+console.log(bb);// 10; // upword
+
+// question no0.3
+let cc1 = Math.ceil(99.40);
+console.log(cc); // 100;
+
+// question no 0.4
+let dd1 = Math.min(7,2,10,0);
+console.log(dd); // 0;
+
+// question no 0.5
+let ee1 = Math.max(7,2,10,0);
+console.log(ee); // 10;
+
+//question no 0.6
+let ff1 =Math.random()*101 +1;
+console.log(ff); // done ;
+
+// quection no 0.7
+let gg1 = Math.trunc(-4.9);
+console.log(gg); // -4 ;
+
+// question no 0.8
+let hh1 = Math.pow(5,3);
+console.log(hh); // 125 ;
+
+
 
 
 
