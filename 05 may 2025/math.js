@@ -254,6 +254,34 @@ let hh1 = Math.pow(5,3);
 console.log(hh); // 125 ;
 
 
+//repeat 
+// methods of date
+
+const year1 = D.getFullYear();
+console.log(year1);
+
+
+const month1 = D.getMonth();
+console.log(month1);
+
+
+const day1 = D.getDay("2");
+console.log(day1);
+
+
+const date1 = D.getDate();
+console.log(date1);
+
+const hour1 = D.getHours();
+console.log(hour1);
+
+const mini1 = D.getMinutes();
+console.log(mini1);
+
+const sec1 = D.getSeconds();
+console.log(sec1);
+
+
 
 
 
