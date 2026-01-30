@@ -281,6 +281,40 @@ console.log(mini1);
 const sec1 = D.getSeconds();
 console.log(sec1);
 
+//repeat
+
+//    MATH TYPE OBJECTS 
+
+// floor - returns the lower value
+
+let a1= Math.floor(5.780);
+console.log(a1);
+
+//ceil - returns the upper value 
+
+let b1 = Math.ceil(3.44);
+console.log(b1);
+
+//trunc - returns the integer value . it avoid the point values
+
+let c1 = Math.trunc(2546.365);
+console.log(c1);
+
+//MIN - returns the minium value
+
+let e1 = Math.min(35,19,29,59,99,89,78);
+console.log(e1);
+
+//MAX - returns the maximum value 
+
+let f1 = Math.max(56,58,77,99,35,36);
+console.log(f1);
+
+//POW - returns the power value
+
+let g1 = Math.pow(3,3);
+console.log(g1);
+
 
 
 
