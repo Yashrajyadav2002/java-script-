@@ -133,3 +133,18 @@ console.log(person.age);
 
 //
 
+let a2;
+console.log(a2, typeof a2);
+ 
+var b2;
+console.log(b2,typeof b2);
+
+//null is show the object value ?
+var value2=null;
+console.log(value2,typeof value2);
+
+
+let person2 = {name:"yash",age:21};
+console.log(person2.name);
+console.log(person2.age);
+
