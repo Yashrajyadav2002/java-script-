@@ -168,8 +168,16 @@ let text3="";
  function myfuncation2(x){
     return x*x;
  }
-console.log(newArray);
+console.log(newArray3);
  
+
+const num4 =[1,2,3,4,5];
+ const newArray6 = num1.map(myfuncation2);
+
+ function myfuncation2(x){
+    return x*x;
+ }
+console.log(newArray6);
  
 
 
