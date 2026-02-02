@@ -64,4 +64,34 @@ document.getElementById("head").innerText=loc;
 let h1 = document.getElementById("demo");
 somthing.addEventlistener("click",function(){
     console.log("button click");
+});
+
+
+
+// repeat
+let h1 = document.getElementById("demo");
+h1.style.color="red";
+h1.style.backgroundColor="yellow";
+let para = document.getElementById("para");
+para.style.color="blue";
+para.style.backgroundColor="hotpink";
+para.style.border="10px solid black";
+para.style.borderRadius="1px";
+para.style.fontSize="19px";
+para.style.fontStyle="italic";
+function change(){
+let Input = document.getElementById("myinput");
+Input.value="doom 5";
+
+}
+function some(){
+let loc = document.getElementById("myinput").value;
+document.getElementById("head").innerText=loc;
+
+}
+// add event listner() method atteches an event heafdler to the specfied element in 
+
+let h1 = document.getElementById("demo");
+somthing.addEventlistener("click",function(){
+    console.log("button click");
 })
