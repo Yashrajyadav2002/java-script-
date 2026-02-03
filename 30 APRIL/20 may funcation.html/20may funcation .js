@@ -45,3 +45,18 @@ console.log("this is the sum of num is",result2);
 console.log("this is the sum of num is",result3);
 console.log("this is the sum of num is",result4);
 
+// repeact
+// when we pass the c value its a optional we can change it to give it a real value
+function system (a,b , c = 5){
+    return a+b+c ;
+}
+result1 = system(5,3);
+result2 = system(9,3);
+result3 = system(10,3 ,2);
+result4 = system(11,3);
+
+console.log("this is the sum of num is",result1);
+console.log("this is the sum of num is",result2);
+console.log("this is the sum of num is",result3);
+console.log("this is the sum of num is",result4);
+
