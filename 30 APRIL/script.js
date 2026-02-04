@@ -84,3 +84,26 @@ function div(c){
 }
 let resuult = div(num)
 console.log(resuult);
+
+// repeact
+// question number 4
+
+function array(){
+    let see = [1,2,3,4,5,6,7,8,9,];
+    sum = 0;
+    for(let i=0;i<see.length;i++){
+        sum=sum+i;
+    }
+    return sum;
+}
+console.log(array());
+
+// question number 5
+
+let num1= prompt("enter a number");
+function div(c){
+    return c*3.14*c;
+}
+let resuult1 = div(num)
+console.log(resuult1);
+
