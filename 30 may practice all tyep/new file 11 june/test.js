@@ -118,3 +118,42 @@ function decrement(){
 
 // question number 0.9
 document.querySelector("#output").innerHTML =  "javascript is amazing , learning javascript is fun" . replace(/javascript/gi,"mearn");
+
+// repeact
+//question number 11
+let color1 = "";
+function favorite(){
+    color1 =prompt("enter the color name");
+    document.querySelector("#colorinput").value;
+    document.body.style.backgroundColor = color1;
+};
+
+const images1 = ["ac.jpg","fridge.jpg","knife.jpg"];
+
+let currentindex1 = 0;
+
+function showimage(index){
+    document.querySelector("#gallery").src = images1[index];
+}
+function shownext(){
+    if (currentindex1 <images.length -1){
+        currentindex1++;
+        showimage(currentindex1);
+    }
+}
+
+function showprevious(){
+    if (currentindex>0){
+        currentindex--;
+        showimage(currentindex);
+    }
+}
+
+//next question 04
+let counterelement1 = "";
+let value1="";
+function increment(){
+     counterelement1 = document.querySelector("#counter");
+     value1 = parseInt(counterelement.innerHTML);
+                counterelement.innerHTML = value1 +3;
+}
