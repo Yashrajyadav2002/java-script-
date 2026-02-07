@@ -108,4 +108,37 @@ obj.age = 23;
 obj["city"]= "banglore";
 console.log(obj);
 
-// 
+// repeact
+
+// chek if a element exist in array ?
+
+let num2 = [1,2,3,4,5];
+let res2 = num2.includes(5);
+console.log(res2);
+
+// loop thorough in arry and print each value ?
+
+let val2 = [10,20,30,40];
+for (let i=0;i<4; i++){
+    console.log(val2[i]);
+}
+
+//creat an object represting a person with name and age,and log the name ?
+
+let person2 ={
+    name:"yash",
+    age:23,
+}
+console.log(person2.name);
+console.log(person2.age);
+
+//add a new value pair to an object ?
+
+let obj = {name:"jhon"};
+obj.age = 23;
+obj["city"]= "banglore";
+console.log(obj);
+
+
+
+
