@@ -323,6 +323,24 @@ console.log(num9);
    
 // (toFixed) - it take the value after the point ?
 
+let fix6= 123456;
+console.log(fix6.toFixed(3));
+
+// toexponstional - 
+
+// precision - it return the pre size value (round figer value)
+
+let pree7 = 123.46;
+console.log(pree7.toPrecision(3));
+
+
+// tostring -  it convert the number into string ?
+
+let str8 = 1234;
+console.log(str8.toString().length);
+
+// (toFixed) - it take the value after the point ?
+
 let fix5 = 123456;
 console.log(fix.toFixed(3));
 
@@ -338,5 +356,6 @@ console.log(pree5.toPrecision(3));
 
 let str7 = 1234;
 console.log(str7.toString().length);
+
 
 
