@@ -276,3 +276,31 @@ let persons = [
  console.log(ree);
  
 
+//.5 find the max num in arry ?
+let aruu1 = [12.15,17,0];
+let max1 = Math.max(...aruu1);
+console.log(max1);
+
+//0.7
+
+let persons1 = [
+    {
+        name:"yash",
+        age:23
+    },
+    { name:"aman",
+        age:24,
+    },
+    {
+        name:"raja",
+        age:23,
+    },
+]
+ let ree1 = final = persons.filter(obj=>
+ {
+    return obj.age === '23'
+ });
+
+ console.log(ree1);
+ 
+
