@@ -113,3 +113,42 @@ d8 = 40 ;
 console.log(a4,b4,c1,d1);
 
 
+// console is print the output
+console.log("Yashraj");
+
+let name3 ; //Declaration
+ name2 = "Yashraj Yadav"; //iniclazition
+console.log(name2); // print the value by the console
+
+let village7 = "Bhopal";
+console.log(village7);
+
+let a7 = 10,
+b7 = 20,
+c7 = 30,
+d7 = 40 ;
+console.log(a3,b3,c4,d3);
+
+// const value is not change in feature
+
+const pi7 = 20.1;
+console.log(pi7);
+
+
+let village8 = "Bhopal";
+console.log(villag8);
+
+let a9 = 10,
+b9 = 20,
+c9 = 30,
+d9 = 40 ;
+console.log(a5,b5,c5,d5);
+
+
+// console is print the output
+console.log("Yashraj");
+
+let name9 ; //Declaration
+ name2 = "Yashraj Yadav"; //iniclazition
+console.log(name9); // print the value by the console
+
