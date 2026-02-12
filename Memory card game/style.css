@@ -1,62 +1,149 @@
+/* ===== Global Reset & Body ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
+  background: radial-gradient(circle at top, #7f00ff, #1e3c72);
+  color: #fff;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding-top: 20px;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* ===== Headings ===== */
 h1 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* ===== Game Container ===== */
 .game-container {
-  width: 340px;
-  margin: 30px auto;
+  width: max-content;
+  margin: 35px auto;
+  padding: 18px;
   display: grid;
   grid-template-columns: repeat(4, 80px);
-  gap: 10px;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
 }
 
+/* ===== Cards ===== */
 .card {
   width: 80px;
   height: 80px;
-  background: #ffffff22;
-  border-radius: 10px;
-  font-size: 2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 16px;
+  font-size: 2.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
+  user-select: none;
+
+  transform-style: preserve-3d;
+  transition: 
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s,
+    background 0.3s;
 }
 
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Flipped Card ===== */
 .card.flipped {
-  background: white;
-  color: black;
-  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  color: #222;
+  transform: rotateY(180deg) scale(1.05);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.35);
 }
 
+/* ===== Matched Card ===== */
 .card.matched {
-  background: limegreen;
-  color: white;
+  background: linear-gradient(135deg, #00ff87, #00c853);
+  color: #fff;
   cursor: default;
   transform: scale(0.95);
+  box-shadow: 0 10px 30px rgba(0, 255, 135, 0.5);
+  animation: pulse 1s infinite alternate;
 }
 
+/* ===== Matched Animation ===== */
+@keyframes pulse {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ===== Button ===== */
 button {
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 12px 26px;
   font-size: 1rem;
+  font-weight: 500;
   border: none;
-  background: #00c6ff;
-  color: white;
-  border-radius: 5px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  letter-spacing: 0.5px;
+
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.45);
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s;
 }
 
+/* Button Hover */
 button:hover {
-  background: #0072ff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 114, 255, 0.65);
+  opacity: 0.95;
+}
+
+/* Button Active */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(0, 114, 255, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 420px) {
+  .game-container {
+    grid-template-columns: repeat(4, 70px);
+    gap: 12px;
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 1.9rem;
+  }
 }
