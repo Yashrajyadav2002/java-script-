@@ -156,4 +156,13 @@ function increment(){
      counterelement1 = document.querySelector("#counter");
      value1 = parseInt(counterelement.innerHTML);
                 counterelement.innerHTML = value1 +3;
-}
+};
+
+
+    <ol>
+        <li>mango</li>
+        <li>grapes</li>
+        <li>orange</li>
+        <li>pear</li>
+        <li>aam</li>
+    </ol>
